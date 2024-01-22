@@ -1,5 +1,9 @@
-import Image from 'next/image';
+import PopularGadgets from '@/components/PopularGadgets';
 
 export default function Home() {
-  return <main>main</main>;
+    return (
+        <main>
+            <PopularGadgets />
+        </main>
+    );
 }
