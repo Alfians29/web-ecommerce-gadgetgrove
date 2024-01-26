@@ -1,9 +1,9 @@
 import PopularGadgets from '@/components/PopularGadgets';
 
 export default function Home() {
-    return (
-        <main>
-            <PopularGadgets />
-        </main>
-    );
+  return (
+    <main>
+      <PopularGadgets />
+    </main>
+  );
 }
