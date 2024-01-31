@@ -1,8 +1,10 @@
 import React from 'react';
 import { useShoppingCart } from 'use-shopping-cart';
+import { useToast } from './ui/use-toast';
 
 const AddToCartBtn = ({ btnStyles, text, icon, id, currency, name, description, images, price }) => {
   const { addItem } = useShoppingCart();
+  const { toast } = useToast();
 
   const gadget = {
     id: id,
@@ -18,6 +20,9 @@ const AddToCartBtn = ({ btnStyles, text, icon, id, currency, name, description, 
       className={`${btnStyles}`}
       onClick={() => {
         addItem(gadget);
+        toast({
+          title: `${name} has been added to the cart`,
+        });
       }}
     >
       <div>{text}</div>
