@@ -2,7 +2,7 @@ import React from 'react';
 import { useShoppingCart } from 'use-shopping-cart';
 import { useToast } from './ui/use-toast';
 
-const AddToCartBtn = ({ btnStyles, text, icon, id, currency, name, description, images, price }) => {
+const AddToCartBtn = ({ btnStyles, text, icon, id, currency, name, description, images, price, price_id }) => {
   const { addItem } = useShoppingCart();
   const { toast } = useToast();
 
@@ -13,6 +13,7 @@ const AddToCartBtn = ({ btnStyles, text, icon, id, currency, name, description, 
     description: description,
     images: images,
     price: price,
+    price_id: price_id,
   };
 
   return (
