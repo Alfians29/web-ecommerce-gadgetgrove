@@ -32,3 +32,6 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// revalidate every 1 hour
+// export const revalidate = 3600;

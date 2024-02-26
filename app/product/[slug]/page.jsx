@@ -42,7 +42,16 @@ const ProductDetails = async ({ params }) => {
                 <p className='text-lg font-semibold'>${gadget.price}</p>
               </div>
               <p>{gadget.description}</p>
-              <AddToCartBtn text='Add to cart' btnStyles='btn btn-accent' />
+              <AddToCartBtn
+                price_id={gadget.price_id}
+                name={gadget.name}
+                currency='USD'
+                description={gadget.description}
+                images={gadget.images}
+                price={gadget.price}
+                text='Add to cart'
+                btnStyles='btn btn-accent'
+              />
             </div>
             {/* info */}
             <div className='flex flex-col gap-3'>
