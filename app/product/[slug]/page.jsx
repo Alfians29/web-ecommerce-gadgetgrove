@@ -49,8 +49,8 @@ const ProductDetails = async ({ params }) => {
                 description={gadget.description}
                 images={gadget.images}
                 price={gadget.price}
-                text='Add to cart'
                 btnStyles='btn btn-accent'
+                text='Add to cart'
               />
             </div>
             {/* info */}

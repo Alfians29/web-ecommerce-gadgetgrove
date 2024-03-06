@@ -30,7 +30,7 @@ const Gadget = ({ gadget }) => {
             description={gadget.description}
             images={gadget.images}
             price={gadget.price}
-            btnStyles='btn-icon bg-accent'
+            btnStyles='btn-icon btn-accent'
             icon={<CgShoppingBag />}
           />
           <Link href={`/product/${gadget.slug}`}>
