@@ -34,4 +34,4 @@ export default function RootLayout({ children }) {
 }
 
 // revalidate data
-// export const revalidate = 0.1;
+// export const revalidate = 1;
