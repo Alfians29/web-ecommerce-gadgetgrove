@@ -8,7 +8,7 @@ import Gadget from './Gadget';
 const GadgetCategories = ({ gadgets }) => {
   const [category, setCategory] = useState('all');
   const [filteredGadgets, setFilteredGadgets] = useState([]);
-  const [price, setPrice] = useState(1000);
+  const [price, setPrice] = useState(2000);
 
   useEffect(() => {
     const filtered = gadgets.filter((gadget) => {
@@ -68,7 +68,7 @@ const GadgetCategories = ({ gadgets }) => {
                   )
                 </span>
               </div>
-              <Slider defaultValue={[1000]} max={2000} step={1} onValueChange={(val) => setPrice(val[0])} />
+              <Slider defaultValue={[2000]} max={2000} step={1} onValueChange={(val) => setPrice(val[0])} />
             </div>
           </aside>
           {/* gadget list */}
