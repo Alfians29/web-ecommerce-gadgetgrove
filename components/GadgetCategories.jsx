@@ -19,8 +19,6 @@ const GadgetCategories = ({ gadgets }) => {
     setFilteredGadgets(filtered);
   }, [category, price, gadgets]);
 
-  console.log(filteredGadgets);
-
   return (
     <section className='min-h-[1200px] py-10'>
       <div className='container mx-auto'>
