@@ -20,12 +20,12 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#222222',
-          hover: '#2f2f2f',
+          DEFAULT: '#461111',
+          hover: '#040303',
         },
         accent: {
-          DEFAULT: '#656565',
-          hover: '#000000',
+          DEFAULT: '#B3541E',
+          hover: '#A13333',
         },
       },
       keyframes: {
